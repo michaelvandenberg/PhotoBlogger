@@ -92,7 +92,9 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
-
+*
+* 1.0.8 / 29.06.2016
+* - Fixed aria hidden when tabbing through the slider.
 *
 * 1.0.7 / 29.06.2016
 * - Removed unused function: photoblogger_the_site_logo().

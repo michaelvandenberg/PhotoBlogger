@@ -140,6 +140,16 @@
 			$( '.slider-cell' ).attr( 'aria-hidden', 'true' );
 			$( '.is-selected' ).attr( 'aria-hidden', 'false' );
 		});
-	}
+
+	// Add ARIA on slide changes when tabbing.
+	$( '.featured-title a, .featured-more' ).on( 'focusin', function() {
+		$( this ).closest( '.slider-cell' ).attr( 'aria-hidden', 'false' );
+	});
+
+	$( '.featured-title a, .featured-more' ).on( 'focusout', function() {
+		$( this ).closest( '.slider-cell' ).attr( 'aria-hidden', 'true' );
+	});
+
+	} // End If.
 
 })( jQuery );
