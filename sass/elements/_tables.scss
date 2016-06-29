@@ -1,0 +1,29 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #202020;
+	@include font-size(0.875);
+}
+thead tr {
+	color: white;
+	background: $color__background-table-header;
+}
+thead tr th,
+tbody tr th,
+tbody tr td,
+tfoot tr th,
+tfoot tr td {
+	border: 1px solid $color__border-content;
+}
+thead tr th {
+	padding: 0.25rem;
+}
+tbody tr th,
+tbody tr td,
+tfoot tr th,
+tfoot tr td {
+	padding: 0.125rem 0.25rem;
+}
+tfoot tr {
+}

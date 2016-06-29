@@ -1,0 +1,83 @@
+.format-link,
+.format-quote {
+	.special-content {
+		p:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			color: white;
+		}
+		a:hover,
+		a:active,
+		a:focus {
+			color: $color__link-hover;
+		}
+	}
+}
+
+/* Aside post format. */
+.format-aside {
+	.special-content {
+		padding: 2em 40px;
+	}
+
+	.special-content {
+		border: 1px solid transparent;
+		padding: 0 40px;
+		line-height: 2;
+		@include font-size(1);
+		border-radius: 2px;
+		box-shadow: inset 0px 0px 25px 5px rgba(18,18,18,0.5);
+		background: linear-gradient(#999999 5%, $color__background-aside-post-format 0);
+		background-size: 100% 32px;
+
+		p {
+			margin: 32px 0;
+		}
+	}
+}
+
+/* Link post format. */
+.format-link {
+	.special-content {
+		font-size: 22px;
+		padding: 40px 30px;
+		letter-spacing: -1px;
+		background: $color__background-link-post-format;
+	}
+}
+
+/* Quote post format. */
+.format-quote {
+	.special-content {
+		background: $color__background-quote-post-format;
+		blockquote {
+			margin: 0;
+			padding: 40px 30px;
+			border: 0;
+			color: white;
+			font-size: 28px;
+			font-weight: bold;
+			font-style: normal;
+			letter-spacing: -1px;
+			font-family: $font__heading;
+			background: transparent;
+			text-align: center;
+			text-shadow: 0px 0px 5px $color__text-main;
+			cite {
+				font-style: normal;
+				letter-spacing: 0;
+			}
+		}
+	}
+}
+
+/* Image post format. */
+.format-image {
+	.entry-title {
+		color: white;
+	}
+	.entry-title:hover {
+		color: $color__link-hover;
+	}
+}

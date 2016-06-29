@@ -1,0 +1,160 @@
+.entry-header {
+	padding-bottom: 1.0em;
+}
+
+/* Entry title. */
+.entry-title {
+	margin: 0;
+	@include font-size(2);
+}
+.entry-title a,
+.entry-title a:visited {
+	color: $primary-color;
+	text-decoration: none;
+	border-bottom: 0px solid $primary-highlight;
+}
+.entry-title a:hover,
+.entry-title a:focus {
+	color: $primary-highlight;
+}
+
+/* Thumbnail. */
+.entry-thumbnail,
+.special-content {
+	margin-bottom: 20px;
+}
+.entry-thumbnail img {
+	display: block;
+}
+.entry-thumbnail,
+.entry-thumbnail a,
+.entry-thumbnail img {
+	width: 100%;
+	height: auto;
+}
+.entry-thumbnail-link {
+	display: block;
+	position: relative;
+}
+.thumbnail-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.5);
+}
+.entry-thumbnail-link:hover .overlay,
+.entry-thumbnail-link:focus .overlay {
+	opacity: 1;
+}
+
+/* Underscores. */
+.sticky {
+	display: block;
+}
+.hentry,
+.page-content {
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.updated:not(.published){
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Meta. */
+.entry-meta,
+.entry-footer {
+	@include font-size(1);
+}
+.entry-meta {
+	margin-top: 0.5em;
+}
+.entry-footer {
+	display: flex;
+	justify-content: space-between;
+}
+.posted-on,
+.byline,
+.cat-links,
+.byline {
+	margin-right: 8px;
+}
+
+/* Content. */
+.entry-content h1:first-child,
+.entry-content h2:first-child,
+.entry-content h3:first-child,
+.entry-content h4:first-child,
+.entry-content h5:first-child,
+.entry-content h6:first-child {
+	margin-top: 0;
+}
+
+/* Genericons. */
+.posted-on::before {
+	content: '\f307';
+	margin-right: 4px;
+}
+.byline::before {
+	content: '\f304';
+	margin-top: -2px;
+	margin-right: -1px;
+}
+.tags-links::before {
+	content: '\f302';
+	margin-right: 4px;
+	margin-top: -2px;
+}
+.cat-links::before {
+	content: '\f301';
+	margin-right: 4px;
+	margin-top: -1px;
+}
+.comments-link::before {
+	content: '\f300';
+	margin-right: 4px;
+	margin-top: -2px;
+}
+.edit-link::before {
+	content: '\f411';
+}
+
+/* Read more. */
+a.more-link {
+	display: table;
+	margin-top: 1em;
+	padding: 1px 4px;
+	color: white;
+	text-decoration: none;
+	background: $color__background-more-link;
+
+	&:hover,
+	&:focus {
+		background: $color__link-hover;
+	}
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+	article.post,
+	article.page,
+	article.portfolio {
+		@include font-size (1.0625);
+	}
+}

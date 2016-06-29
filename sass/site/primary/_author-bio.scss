@@ -1,0 +1,45 @@
+.author-info {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.author-heading {
+		margin-top: 0;
+	}
+	.author-info-inner {
+		display: flex;
+	}
+	.author-avatar {
+		display: flex;
+		align-items: center;
+		min-width: 98px;
+		max-width: 98px;
+	}
+	.author-title {
+		margin: 0 0 0.25rem 0;
+	}
+	.author-bio {
+		display: block;
+		margin: 0;
+	}
+	.author-link {
+
+		&::after {
+			content: '\f429';
+			position: relative;
+			top: 3px;
+			display: inline-block;
+			width: 1.4em;
+			font-size: 16px;
+			line-height: 1;
+			font-family: "Genericons", sans-serif;
+			text-decoration: inherit;
+			font-weight: normal;
+			font-style: normal;
+			text-align: center;
+			vertical-align: top;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__heading;
+}
+
+.big-link {
+	display: block;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+	background: #171717;
+	transition: background 0.2s;
+
+	span {
+		position: relative;
+		top: 25px;
+		color: white;
+	}
+
+	&.live-demo {
+		background: #293f65;
+	}
+
+	&.download {
+		background: #21759b;
+	}
+
+	&.contribute {
+		background: #4078c0;
+	}
+
+	&:hover,
+	&:focus {
+		background: #d71d1d;
+	}
+}

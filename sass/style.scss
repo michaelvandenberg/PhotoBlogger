@@ -1,0 +1,119 @@
+/*!
+Theme Name: PhotoBlogger
+Theme URI: http://michaelvandenberg.com/portfolio/photoblogger/
+Author: Michael Van Den Berg
+Author URI: http://michaelvandenberg.com/
+Description: PhotoBlogger is a theme specifically  designed for photobloggers, photographers and artists wanting to showcase their art in a fullscreen slider. It’s modern, minimal and responsive, and it’s accessibility-ready. It supports several post formats (quote, link, image and aside), a full width page template, and… well, why don’t you just give it a try? You know you want to! ;)
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: photoblogger
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-menu, custom-header, featured-image-header, featured-images, full-width-template, theme-options, threaded-comments, blog, photography
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PhotoBlogger is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Layout
+	## Global
+	## Header
+	## Content
+	## Footer
+# Navigation
+	## Links
+	## Menus
+	## Social
+# Slider
+# Accessibility
+# Alignments
+# Widgets
+# Content
+    ## Posts and pages
+	## Post formats
+	## Comments
+	## Author bio
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
+@import "slider/slider";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";

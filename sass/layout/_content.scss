@@ -1,0 +1,123 @@
+#featured {
+	background: $color__background-featured;
+}
+
+#primary .post,
+#primary .page,
+#primary .portfolio,
+#secondary .widget,
+.author-info,
+.page-header,
+.page-content,
+.post-navigation,
+.comments-area,
+.comment-form-area {
+	border-bottom: 1px solid $color__border-content;
+}
+
+.widget-inner {
+	padding: 40px 0;
+}
+
+.entry-content,
+.comment-content,
+.author-bio {
+	line-height: 1.6;
+}
+
+@media screen and (min-width: $breakpoint-large) {
+	#content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		max-width: 100%;
+	}
+
+	#primary {
+		width: calc( 760px +  ( 50% - 570px ) );
+		border-right: 1px solid $color__border-content;
+	}
+	#primary .post,
+	#primary .page,
+	#primary .portfolio,
+	#primary .author-info,
+	#primary .page-header,
+	#primary .page-content,
+	#primary .post-navigation,
+	#primary .comments-area,
+	#primary .comment-form-area,
+	#primary .pagination-container {
+		display: flex;
+		justify-content: flex-end;
+		padding-left: calc( 5% + ( 5% * 1 / 3 ) );
+		padding-right: 40px;
+	}
+	#secondary {
+		width: calc( 380px +  ( 50% - 570px ) );
+		border-top: 0;
+		border-left: 1px solid #e1e1e1;
+		margin-left: -1px;
+	}
+	#secondary .widget {
+		padding-left: 40px;
+		padding-right: calc( 10% + ( 10% * 2 / 3 ) );
+	}
+
+	.article-inner,
+	.widget-inner,
+	.author-info-inner,
+	.page-header-inner,
+	.page-content-inner,
+	.post-navigation .nav-links,
+	.comments-area-inner,
+	.comment-form-area-inner,
+	.pagination {
+		margin: 0;
+		width: 100%;
+		max-width: $size__max-content;
+	}
+	.widget-inner {
+		max-width: $size__max-sidebar;
+	}
+
+	/* No sidebar. */
+	body.no-sidebar {
+		#primary {
+			width: 100%;
+			max-width: 800px;
+			border-left: 1px solid $color__border-content;
+		}
+		#primary .post,
+		#primary .page,
+		#primary .portfolio,
+		#primary .author-info,
+		#primary .page-header,
+		#primary .page-content,
+		#primary .post-navigation,
+		#primary .comments-area,
+		#primary .comment-form-area,
+		#primary .pagination-container {
+			padding-left: 40px;
+		}
+	}
+
+	/* Full Width Page Template. */
+	body.full-width-page-template {
+		#primary {
+			@include site-width();
+			border-left: 1px solid $color__border-content;
+		}
+		#primary .page,
+		#primary .author-info,
+		#primary .comments-area,
+		#primary .comment-form-area {
+			padding-left: 40px;
+		}
+		.article-inner,
+		.author-info-inner,
+		.comments-area-inner,
+		.comment-form-area-inner {
+			max-width: 100%;
+		}
+	}
+}

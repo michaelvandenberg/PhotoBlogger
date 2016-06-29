@@ -1,0 +1,169 @@
+.widget {
+	margin: 0em;
+
+	.widget-title {
+		display: inline-block;
+		margin: 0;
+		margin-bottom: 1.5rem;
+		padding-bottom: 2px;
+		text-transform: uppercase;
+		border-bottom: 2px solid;
+		@include font-size(1.125);
+	}
+	ul,
+	ul.sub-menu,
+	ul.children {
+		margin-left: 24px;
+		margin-left: 1.5rem;
+	}
+	li:not(:first-child) {
+		margin-top: 8px;
+		margin-top: 0.5rem;
+	}
+	&.photoblogger_widget_recent_comments,
+	&.photoblogger_widget_recent_entries,
+	&.widget_recent_comments,
+	&.widget_categories,
+	&.widget_archive,
+	&.widget_recent_entries,
+	&.widget_rss,
+	&.widget_meta,
+	&.widget_pages,
+	&.widget_links,
+	&.widget_nav_menu {
+		ul {
+			margin: 0;
+			padding-left: 0;
+			list-style: none;
+		}
+		ul.sub-menu,
+		ul.children {
+			margin-left: 24px;
+			margin-left: 1.5rem;
+			li {
+				margin-top: 8px;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+	&.widget_recent_entries,
+	&.widget_recent_comments,
+	&.widget_categories,
+	&.widget_archive,
+	&.widget_rss,
+	&.widget_meta,
+	&.widget_pages,
+	&.widget_links {
+		li {
+			padding-bottom: 4px;
+		}
+		a {
+			display: inline-block;
+			text-decoration: none;
+		}
+	}
+	&.widget_recent_entries {
+		.post-date {
+			display: block;
+			font-style: italic;
+			@include font-size(0.875);
+		}
+	}
+	&.photoblogger_widget_recent_comments,
+	&.photoblogger_widget_recent_entries {
+		.widget-title {
+			margin-bottom: 1.75rem;
+		}
+		li {
+			display: flex;
+		}
+		li div {
+
+		}
+		li a {
+			text-decoration: none;
+			word-wrap: break-word;
+		}
+		img {
+			max-width: 75px;
+			max-height: 75px;
+		}
+		img:hover,
+		a:focus img {
+			filter: grayscale(75%);
+		}
+		.widget-thumbnail {
+			flex-shrink: 0; // See: Minimum content sizing of flex items not honored https://github.com/philipwalton/flexbugs
+			margin-right: 1rem;
+		}
+
+	}
+	&.photoblogger_widget_recent_comments {
+		span.post-date,
+		div.comment-widget-author {
+			display: block;
+			font-style: italic;
+			@include font-size(0.875);
+		}
+		.comment-widget-author-link a {
+			font-weight: normal;
+			background: transparent;
+		}
+		.comment-widget-author-link a:hover {
+			background: transparent;
+		}
+	}
+	&.photoblogger_widget_recent_entries {
+		.post-date {
+			display: block;
+			font-style: italic;
+			@include font-size(0.875);
+		}
+	}
+	&.widget_calendar {
+		caption {
+			margin-bottom: 4px;
+		}
+		tbody td {
+			text-align: center;
+		}
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Styles for Jetpack widgets. */
+.widget-grofile .widget-title  {
+	padding-bottom: 20px;
+}
+.widget_contact_info {
+	.contact-map {
+		margin-bottom: 20px;
+	}
+	.confit-address,
+	.confit-phone {
+		margin-bottom: 8px;
+	}
+}
+
+#secondary-inner .widget {
+	padding-bottom: 1.5rem;
+	margin: 1.5rem 0;
+	border-bottom: 2px solid #171717;
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+	#secondary-inner .widget:first-child {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: $breakpoint-full) {
+	#secondary-inner .widget:last-child {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+}

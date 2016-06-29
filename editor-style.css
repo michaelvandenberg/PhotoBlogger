@@ -1,0 +1,137 @@
+body {
+  color: #1f1f1f;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 20px 40px;
+  max-width: 720px;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Fyra Sans", sans-serif;
+}
+
+q {
+  quotes: "" "";
+}
+q:before, q:after {
+  content: "";
+}
+
+blockquote {
+  quotes: "" "";
+  margin: 0 0 1.5em 0;
+  padding: 1.5em;
+  color: #d9d9d9;
+  background: #121212;
+  border-left: 4px solid #cc0000;
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+}
+blockquote:before, blockquote:after {
+  content: "";
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote cite {
+  display: block;
+  margin-top: 6px;
+  text-align: right;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 0.25em;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #202020;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+thead tr {
+  color: white;
+  background: #cc0000;
+}
+
+thead tr th,
+tbody tr th,
+tbody tr td,
+tfoot tr th,
+tfoot tr td {
+  border: 1px solid #e1e1e1;
+}
+
+thead tr th {
+  padding: 0.25rem;
+}
+
+tbody tr th,
+tbody tr td,
+tfoot tr th,
+tfoot tr td {
+  padding: 0.125rem 0.25rem;
+}
+
+a {
+  color: #1f1f1f;
+}
+a:visited {
+  color: #1f1f1f;
+}
+a:hover, a:focus, a:active {
+  color: #cc0000;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
