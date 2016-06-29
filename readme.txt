@@ -1,5 +1,5 @@
 PhotoBlogger
-Theme Version: 1.0.6
+Theme Version: 1.0.7
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -92,6 +92,10 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
+
+*
+* 1.0.7 / 29.06.2016
+* - Removed unused function: photoblogger_the_site_logo().
 *
 * 1.0.6 / 29.06.2016
 * - Enhanced Flickity slider with Aria for improved accessibility.

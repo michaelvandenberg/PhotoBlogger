@@ -51,17 +51,6 @@ function photoblogger_infinite_scroll_render() {
 } // end function photoblogger_infinite_scroll_render
 
 /**
- * Return early if Site Logo is not available.
- */
-function photoblogger_the_site_logo() {
-	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
-		return false;
-	} else {
-		jetpack_the_site_logo();
-	}
-} // end function photoblogger_the_site_logo
-
-/**
  * Get the featured posts function.
  */
 function photoblogger_get_featured_posts() {
