@@ -275,6 +275,11 @@
 	transform: rotate(-45deg);
 }
 
+/* Move menu-toggle further down when admin-bar is active. */
+.admin-bar .menu-toggle {
+	top: 60px;
+}
+
 /* Reveal & hide. */
 #desktop-navigation {
 	display: none;

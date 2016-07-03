@@ -90,50 +90,50 @@
 	Flickity.
 	--------------------------------------------------------------*/
 
-	// Grab data from functions.php using wp_localize_script().
-	var optionOnePhotoBlogger = parseInt( photobloggerData.photoblogger_autoplay );
+	if ( $( 'body' ).hasClass( 'flickity-enabled' ) ) {
 
-	// Initialize Flickity.
-	$( '.featured-area' ).flickity({
-		// options
-		cellSelector: '.slider-cell',
-		prevNextButtons: false,
-		wrapAround: true,
-		autoPlay: optionOnePhotoBlogger,
-	});
+		// Grab data from functions.php using wp_localize_script().
+		var optionOnePhotoBlogger = parseInt( photobloggerData.photoblogger_autoplay );
 
-	// Get the custom prev/next buttons to work.
-	var $carousel = $( '.featured-area' ).flickity();
-
-	$('.flickity-prev-next-button.previous').on( 'click', function() {
-		$carousel.flickity( 'previous' );
-	});
-
-	$('.flickity-prev-next-button.next').on( 'click', function() {
-		$carousel.flickity( 'next' );
-	});
-
-	// Make the slider more accessible.
-	$( '.skip-link' ).focus(function() {
-
-		// Destroy original instance of Flickity.
-		$carousel.flickity( 'destroy' );
-
-		// Hide the prev/next buttons.
-		$( '.flickity-prev-next-button' ).hide();
-
-		// Start new instance of Flickity without autoplay.
+		// Initialize Flickity.
 		$( '.featured-area' ).flickity({
 			// options
 			cellSelector: '.slider-cell',
 			prevNextButtons: false,
 			wrapAround: true,
+			autoPlay: optionOnePhotoBlogger,
 		});
-	});
 
-	// Add ARIA on slide changes.
-	if ( $( 'body' ).hasClass( 'has-slider-img' ) ) {
+		// Get the custom prev/next buttons to work.
+		var $carousel = $( '.featured-area' ).flickity();
 
+		$('.flickity-prev-next-button.previous').on( 'click', function() {
+			$carousel.flickity( 'previous' );
+		});
+
+		$('.flickity-prev-next-button.next').on( 'click', function() {
+			$carousel.flickity( 'next' );
+		});
+
+		// Make the slider more accessible.
+		$( '.skip-link' ).focus(function() {
+
+			// Destroy original instance of Flickity.
+			$carousel.flickity( 'destroy' );
+
+			// Hide the prev/next buttons.
+			$( '.flickity-prev-next-button' ).hide();
+
+			// Start new instance of Flickity without autoplay.
+			$( '.featured-area' ).flickity({
+				// options
+				cellSelector: '.slider-cell',
+				prevNextButtons: false,
+				wrapAround: true,
+			});
+		});
+
+		// Add ARIA on slide changes.
 		$( '.is-selected' ).attr( 'aria-hidden', 'false' );
 
 		$carousel.on( 'cellSelect', function() {
@@ -151,5 +151,6 @@
 		});
 
 	} // End If.
+	
 
 })( jQuery );

@@ -1,5 +1,5 @@
 PhotoBlogger
-Theme Version: 1.0.7
+Theme Version: 1.0.9
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -92,6 +92,11 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
+*
+* 1.0.9 / 03.07.2016
+* - Fixed "Uncaught TypeError: $(...).flickity is not a function" error.
+* - Moved .menu-toggle further down when .admin-bar is active.
+* - Added box-shadow when focus is on input for better accessibility.
 *
 * 1.0.8 / 29.06.2016
 * - Fixed aria hidden when tabbing through the slider.

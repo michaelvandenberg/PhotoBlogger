@@ -34,6 +34,11 @@ function photoblogger_body_classes( $classes ) {
 		$classes[] = 'has-slider-img';
 	}
 
+	// Adds a class if is frontpage and at least two featured posts.
+	if ( is_front_page() && photoblogger_has_featured_posts( 2 ) )  {
+		$classes[] = 'flickity-enabled';
+	}
+
 	// Adds a class if sidebar doesn't contain any widgets.
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';

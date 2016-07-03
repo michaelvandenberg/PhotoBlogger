@@ -5,7 +5,7 @@ Theme URI: http://michaelvandenberg.com/portfolio/photoblogger/
 Author: Michael Van Den Berg
 Author URI: http://michaelvandenberg.com/
 Description: PhotoBlogger is a theme specifically  designed for photobloggers, photographers and artists wanting to showcase their art in a fullscreen slider. It’s modern, minimal and responsive, and it’s accessibility-ready. It supports several post formats (quote, link, image and aside), a full width page template, and… well, why don’t you just give it a try? You know you want to! ;)
-Version: 1.0.8
+Version: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: photoblogger
@@ -522,6 +522,13 @@ input[type="submit"]:focus {
   color: #cc0000;
   border-color: #cc0000;
   outline: thin dotted;
+  outline-color: #cc0000;
+}
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 input[type="text"],
@@ -558,7 +565,6 @@ textarea {
 /* Default search. */
 .search-form {
   position: relative;
-  overflow: hidden;
   border: 1px solid #1f1f1f;
   background: white;
 }
@@ -601,7 +607,8 @@ textarea {
   top: -1px;
   left: -3px;
 }
-.search-form .search-submit:hover {
+.search-form .search-submit:hover,
+.search-form .search-submit:focus {
   cursor: pointer;
   color: #cc0000;
 }
@@ -1643,6 +1650,11 @@ a:hover, a:active {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/* Move menu-toggle further down when admin-bar is active. */
+.admin-bar .menu-toggle {
+  top: 60px;
 }
 
 /* Reveal & hide. */
