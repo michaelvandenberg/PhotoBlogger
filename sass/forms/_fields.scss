@@ -9,6 +9,8 @@ textarea {
 
 	&:focus {
 		color: $color__text-input-focus;
+		outline-offset: -2px;
+		outline: $color__link-hover auto 5px;
 	}
 }
 

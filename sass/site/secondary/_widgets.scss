@@ -128,6 +128,11 @@
 			text-align: center;
 		}
 	}
+	&.widget_search input[type="search"]:focus {
+		color: $color__text-input-focus;
+		outline-offset: 15px;
+		outline: $color__link-hover auto 5px;
+	}
 
 	/* Make sure select elements fit in widgets. */
 	select {

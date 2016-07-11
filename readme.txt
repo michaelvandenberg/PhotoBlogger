@@ -1,5 +1,5 @@
 PhotoBlogger
-Theme Version: 1.0.9
+Theme Version: 1.1.0
 Author: Michael Van Den Berg 
 Author URL: http://michaelvandenberg.com/
 
@@ -92,6 +92,10 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
+*
+* 1.1.0 / 11.07.2016
+* - Fixed outline on input:focus (textarea, e-mail, search, etc).
+* - Added shortlink to demo to the theme description: http://wp.me/p8Ci4-ju.
 *
 * 1.0.9 / 03.07.2016
 * - Fixed "Uncaught TypeError: $(...).flickity is not a function" error.
