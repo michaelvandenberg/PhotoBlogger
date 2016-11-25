@@ -1,7 +1,7 @@
 PhotoBlogger
-Theme Version: 1.1.0
+Theme Version: 1.1.1
 Author: Michael Van Den Berg 
-Author URL: http://michaelvandenberg.com/
+Author URL: https://michaelvandenberg.com/
 
 --------------------
 === Description ===
@@ -15,7 +15,7 @@ PhotoBlogger is a theme specifically  designed for photobloggers, photographers 
 --------------------
 
 PhotoBlogger WordPress Theme, Copyright 2016 Michael Van Den Berg.
-PhotoBlogger is distributed under the terms of the GNU GPL license 2.0 or later.
+PhotoBlogger is distributed under the terms of the GNU GPL license 3.0 or later.
 
 PhotoBlogger is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
@@ -92,6 +92,13 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
+*
+* 1.1.1 / 25.11.2016
+* - Changed theme URI to: https://michaelvandenberg.com/themes/#photoblogger
+* - Made the WordPress url in the footer translatable.
+* - Removed support for html5 searchform in functions.php.
+* - Added some margin-bottom to the reply button in the comments section.
+* - Changed theme license from GPL 2.0 to GPL 3.0 (because of Flickity).
 *
 * 1.1.0 / 11.07.2016
 * - Fixed outline on input:focus (textarea, e-mail, search, etc).

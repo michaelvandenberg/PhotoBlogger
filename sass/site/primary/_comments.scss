@@ -54,7 +54,7 @@
 	background: $color__background-comments-depth;
 }
 .comment.depth-1:last-child article {
-	padding-bottom: 0;
+	padding-bottom: 1px;
 }
 
 .comment-content a {
@@ -64,6 +64,7 @@
 /* Reply button/link. */
 .reply {
 	display: block;
+	margin-bottom: 1em;
 }
 .reply a {
 	border: 1px solid;
