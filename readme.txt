@@ -1,5 +1,5 @@
 PhotoBlogger
-Theme Version: 1.1.1
+Theme Version: 1.1.2
 Author: Michael Van Den Berg 
 Author URL: https://michaelvandenberg.com/
 
@@ -92,6 +92,13 @@ Note: The fullscreen slider will only be shown on the front page.
 === Changelog ===
 --------------------
 
+*
+* 1.1.2 / 27.11.2016
+* - Fixed jagged animation of Menu Toggle caused by new version of Autoprefixer.
+* - For more info on the previous issue see: https://github.com/postcss/autoprefixer/issues/748
+* - Replaced short link in the theme description with a new short link: http://wp.me/P8Ci4-o3
+* - Added aria-hidden="true" to span.meta-nav in cases where it wasn't already there.
+* - Published by and the author name in the bio section are combined into a single line.
 *
 * 1.1.1 / 25.11.2016
 * - Changed theme URI to: https://michaelvandenberg.com/themes/#photoblogger
