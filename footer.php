@@ -24,7 +24,7 @@ $custom_copyright = get_theme_mod( 'photoblogger_custom_copyright' );
 					<?php } else { ?>
 						<div class="copyright"><span class="symbol">&copy; </span><?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a><span class="sep"> – </span><span class="description"><?php bloginfo( 'description' ); ?>.</span></div>
 					<?php } ?>
-					<span class="generator"><?php echo esc_html__( 'Powered by ', 'photoblogger' ); ?><a href="<?php echo esc_url( __( 'https://wordpress.org/') ); ?>" rel="generator">WordPress</a></span>
+					<span class="generator"><?php echo esc_html__( 'Powered by ', 'photoblogger' ); ?><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'photoblogger' ) ); ?>" rel="generator">WordPress</a></span>
 					<span class="sep"> | </span>
 					<span class="designer"><?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'photoblogger' ), '<a href="https://michaelvandenberg.com/themes/#photoblogger" rel="theme">PhotoBlogger</a>', 'Michael Van Den Berg' ); ?></span>
 				</div><!-- .site-info-inner-left -->

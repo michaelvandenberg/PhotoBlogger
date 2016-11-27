@@ -99,6 +99,7 @@ Note: The fullscreen slider will only be shown on the front page.
 * - Replaced short link in the theme description with a new short link: http://wp.me/P8Ci4-o3
 * - Added aria-hidden="true" to span.meta-nav in cases where it wasn't already there.
 * - Published by and the author name in the bio section are combined into a single line.
+* - And fixed a missing text domain in the footer (the WordPress url).
 *
 * 1.1.1 / 25.11.2016
 * - Changed theme URI to: https://michaelvandenberg.com/themes/#photoblogger
